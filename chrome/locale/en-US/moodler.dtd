@@ -1,0 +1,16 @@
+﻿<!ENTITY mainbutton.tooltip "MoodleR">
+<!ENTITY mainbutton.showsum "Show File Status">
+<!ENTITY mainbuttonpopup.setup "Setup">
+<!ENTITY mainbuttonpopup.semester "New Semester">
+<!ENTITY mainbuttonpopup.setcourses "Edit Monitored Courses">
+<!ENTITY mainbuttonpopup.setchapters "Set Allowed Sections">
+<!ENTITY mainbuttonpopup.launch "Launch MoodleR">
+<!ENTITY mainbuttonpopup.uncache "Purge Cache">
+
+<!ENTITY setup.title "Setup MoodleR">
+<!ENTITY setup.help "In order to correctly use MoodleR, you will need to specify some basic settings.">
+<!ENTITY setup.setting "Setting">
+<!ENTITY setup.value "Value (Click to change)">
+<!ENTITY setup.host "Host">
+<!ENTITY setup.savedir "Save Directory">
+<!ENTITY setup.semester "Semester Folder Name">

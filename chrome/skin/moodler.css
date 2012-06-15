@@ -1,0 +1,6 @@
+.popup-notification-icon[popupid="MoodleR-Notify"] {
+	list-style-image: url("chrome://moodler/skin/default/hat.png");
+}
+#Moodler-Icon {
+    list-style-image: url("chrome://moodler/skin/default/hat.png");
+}

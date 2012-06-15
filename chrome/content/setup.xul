@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://moodler/locale/moodler.dtd">
+<dialog style="margin: auto; margin: 1em;" class="chromeclass-toolbar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&setup.title;" onload="onLoad();" persist="screenX screenY width height" id="MoodleR-Setup" buttons="accept" defaultButton="accept">
+	<script type="application/javascript" src="chrome://moodler/content/setup.js" />
+	<hbox><label style="font-weight: bold; text-decoration: underline;" value="&setup.title;" /></hbox>
+	<hbox><label value="" /></hbox>
+	<hbox><label style="font-weight: bold;" value="&setup.help;" /></hbox>
+	<grid flex="10">
+		<columns>
+			<column flex="1" />
+			<column flex="2" />
+			<column flex="2" />
+			<column flex="1" />
+		</columns>
+		<rows id='params'>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label style="font-weight: bold; text-decoration: underline" value="&setup.setting;" />
+				<label style="font-weight: bold; text-decoration: underline" value="&setup.value;" />
+			</row>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label value="&setup.host;" />
+				<label value="" id="host" style="cursor: pointer" />
+			</row>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label value="&setup.savedir;" />
+				<label value="" id="dir" style="cursor: pointer" />
+			</row>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label value="&setup.semester;" />
+				<label value="" id="sem" style="cursor: pointer" />
+			</row>
+		</rows>
+	</grid>
+</dialog>
