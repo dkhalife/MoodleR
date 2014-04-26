@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://moodler/locale/moodler.dtd">
+<dialog style="margin: auto; margin: 1em;" class="chromeclass-toolbar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&setup.title;" onload="onLoad();" persist="screenX screenY width height" id="MoodleR-Setup" buttons="accept" defaultButton="accept">
+	<script type="application/javascript" src="chrome://moodler/content/setup.js" />
+	<hbox><label style="font-weight: bold; text-decoration: underline;" value="&setup.title;" /></hbox>
+	<hbox><label value="" /></hbox>
+	<hbox><label style="font-weight: bold;" value="&setup.help;" /></hbox>
+	<grid flex="10">
+		<columns>
+			<column flex="1" />
+			<column flex="2" />
+			<column flex="2" />
+			<column flex="1" />
+		</columns>
+		<rows id='params'>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label style="font-weight: bold; text-decoration: underline" value="&setup.setting;" />
+				<label style="font-weight: bold; text-decoration: underline" value="&setup.value;" />
+			</row>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label value="&setup.host;" />
+				<textbox id="host" value="" tooltiptext="&setup.sethost;" oninput="setHost(this);" />
+			</row>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label value="&setup.savedir;" />
+				<textbox id="dir" value="" tooltiptext="&setup.setdir;" disabled="true" />
+				<hbox>
+					<image src="chrome://moodler/skin/default/browse.png" style="cursor: pointer;" onclick="setDir(document.getElementById('dir'));" />
+				</hbox>
+			</row>
+			<row>
+				<label value="" />
+			</row>
+			<row>
+				<label value="&setup.semester;" />
+				<textbox id="sem" value="" tooltiptext="&setup.setsem;" oninput="setSem(this);" />
+			</row>
+		</rows>
+	</grid>
+</dialog>

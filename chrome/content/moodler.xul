@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://moodler/skin/moodler.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://moodler/locale/moodler.dtd">
+<overlay id="Moodler-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://moodler/content/jquery.js"></script>
+	<script type="application/x-javascript" src="chrome://moodler/content/moodler.js"></script>
+	<script type="application/x-javascript" src="chrome://moodler/content/md5.js"></script>
+	<script type="application/x-javascript" src="chrome://moodler/content/progress.js"></script>
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton type="menu" id="Moodler-Icon" style="-moz-box-orient: horizontal;" class="chromeclass-toolbar-additional" tooltiptext="&mainbutton.tooltip;" label="&mainbutton.tooltip;">
+			<menupopup id="MoodleR-StatusContextMenu">
+				<menuitem label="&mainbuttonpopup.setup;" oncommand="MoodleR.setup();"/>
+				<menuseparator/>
+				<menuitem label="&mainbuttonpopup.semester;" oncommand="MoodleR.setSemester();"/>
+				<menuitem label="&mainbuttonpopup.setcourses;" oncommand="MoodleR.setCourses();"/>
+				<menuitem label="&mainbuttonpopup.setresources;" oncommand="MoodleR.setResources();"/>
+				<menuseparator/>
+				<menuitem id="MoodleR-Launch" label="&mainbuttonpopup.launch;" oncommand="MoodleR.unleash();"/>
+				<menuitem id="MoodleR-Cancel" label="&mainbuttonpopup.stop;" oncommand="MoodleR.cancel();" disabled="true"/>
+				<menuseparator/>
+				<menuitem label="&mainbuttonpopup.uncache;" oncommand="MoodleR.unCache();"/>
+			</menupopup>
+		</toolbarbutton>
+	</toolbarpalette>
+	
+ 	<stringbundleset>
+		<stringbundle id="MoodleR-Lang" src="chrome://moodler/locale/moodler.properties"/>
+	</stringbundleset>
+</overlay>

@@ -1,0 +1,8 @@
+content moodler chrome/content/
+overlay chrome://browser/content/browser.xul chrome://moodler/content/moodler.xul
+skin moodler classic/1.0 chrome/skin/
+style chrome://global/content/customizeToolbar.xul chrome://moodler/skin/moodler.css
+
+locale moodler en-US chrome/locale/en-US/
+
+resource moodler-icons chrome/skin/default/

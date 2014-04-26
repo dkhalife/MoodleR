@@ -1,0 +1,1 @@
+@start firefox.exe MoodleR.xpi
